@@ -12,7 +12,7 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     MapComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     LeafletModule
   ],
   providers: [],
