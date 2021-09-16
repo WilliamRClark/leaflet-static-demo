@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AppRoutingModule } from './app-routing.module';
+import { ScullyLibModule } from '@scullyio/ng-lib';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     LeafletModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([]),
+    ScullyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
