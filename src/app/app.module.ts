@@ -7,12 +7,16 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AppRoutingModule } from './app-routing.module';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent
+    MapComponent,
+    HeaderComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
